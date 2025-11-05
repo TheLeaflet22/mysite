@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СайтВизитка_Новгородов Артемий_П-11</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header class="clearfix">
+            <a id="logo" href="index.html"><span class="pink">Сайт</span> <i id="visitka">визитка</i></a>
+            <nav id="mainnav">
+                <ul>
+                    <li><a href="uslugi.html">Услуги</a></li>
+                    <li><a href="Team.html">О нас</a></li>
+                    <li><a href="clients.html">Клиенты</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <form id="contact-form" action="/submit-form" method="POST">
+                <div class="form_item">
+                    <label for="topic"><i>Тема</i></label><br>
+                    <select name="topic" id="topic">
+                        <option value="1">Заказать услугу</option>
+                        <option value="2">Оставить отзыв/замечание</option>
+                        <option value="3">Предложить сотрудничество</option>
+                        <option value="4">Другое</option>
+                    </select>
+                </div>
+
+                <div class="form_item">
+                    <label for="name"><i>Имя</i></label><br>
+                    <input name="name" id="name" type="text" placeholder="Введите имя" required>
+                </div>
+
+                <div class="form_item">
+                    <label for="tel"><i>Телефон</i></label><br>
+                    <input name="tel" id="tel" type="tel" placeholder="Введите номер телефона" required>
+                </div>
+
+                <div class="form_item">
+                    <label for="date"><i>Дата обращения</i></label><br>
+                    <input name="date" id="date" type="date" required>
+                </div>
+
+                <div class="form_item">
+                    <label for="email"><i>Email</i></label><br>
+                    <input name="email" id="email" type="email" placeholder="Введите email" required>
+                </div>
+
+                <div class="form_item">
+                    <label for="textarea"><i>Текст сообщения</i></label><br>
+                    <textarea id="textarea" rows="9" name="textarea" placeholder="Текст вашего сообщения" required></textarea>
+                </div>
+
+                <div class="form_item">
+                    <input type="submit" value="Отправить">
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <p class="footer_block"><a href="form.html">Написать нам &#9650;</a></p>
+        <p class="footer_block">&copy; Новая Компания</p>
+        <div class="footer_icons">
+            <a href="https://mail.ru/" target="_blank"><img class="footer_img" src="content/mailru.png" alt="mailru"></a>
+            <a href="https://m.ok.ru/" target="_blank"><img class="footer_img" src="content/ok.png" alt="ok"></a>
+            <a href="https://m.vk.com/" target="_blank"><img class="footer_img" src="content/vk.png" alt="vk"></a>
+        </div>
+    </footer>
+</body>
+</html>
